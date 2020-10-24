@@ -163,7 +163,7 @@ p.sale {
 
 /* Media query for tablets and large phones*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) {
   body {
     background-color: lightblue;
   }
@@ -184,9 +184,12 @@ p.sale {
 
 /* Media query for laptops*/
 
+@media (max-width: 1366px) {
+}
+
 /* Media query for desktops*/
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1920px) {
   li a {
     padding: 16px 58px;
     margin: 0px 16px;
