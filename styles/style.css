@@ -125,19 +125,6 @@ p.sale {
   height: 235px;
 }
 
-.sale_flexbox_container {
-  display: flex;
-  justify-content: center;
-  background-color: var(--orange);
-}
-
-.sale_flexbox {
-  width: 166px;
-  margin: 41px 20px 41px 20px;
-  background-color: #f1f1f1;
-  height: 320px;
-}
-
 .space {
   display: block;
   background-color: thistle;
@@ -168,8 +155,13 @@ p.sale {
     background-color: lightblue;
   }
 
-  .main_flexbox_container {
+  .sale_flexbox_container {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+  .sale_flexbox {
+    flex-basis: auto;
   }
 
   .logo {
@@ -186,9 +178,22 @@ p.sale {
 
 /* Media query for desktops*/
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 600px) {
   li a {
     padding: 16px 58px;
     margin: 0px 16px;
+  }
+
+  .sale_flexbox_container {
+    display: flex;
+    justify-content: center;
+    background-color: var(--orange);
+  }
+
+  .sale_flexbox {
+    width: 166px;
+    margin: 41px 20px 41px 20px;
+    background-color: #f1f1f1;
+    height: 320px;
   }
 }
