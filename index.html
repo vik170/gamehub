@@ -5,20 +5,16 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <div class="space">
-      <p>block1</p>
-    </div>
     <div class="icon_flexbox_container">
+      <div class="icon_flexbox">
+        <a href="#"><img src="./images/icons/login.svg" /></a>
+      </div>
       <div class="icon_flexbox"></div>
+        <a href="#"><img src="./images/icons/sign_up.svg" /></a>
       <div class="icon_flexbox"></div>
-      <div class="icon_flexbox"></div>
+        <a href="#"><img src="./images/icons/cart.svg" /></a>
     </div>
-    <div class="searchbar">
-      <form>
-        <input type="search" id="gamesearch" name="gamesearch" placeholder="Search">
-        <input type="submit">
-      </form>
-    </div>
+    
     <div>
     <img class="logo" src="images/logos/GameHub_Logo.png" alt="Logo" />
     </div>
@@ -89,22 +85,22 @@
         <p>$45</p>
       </div>
     </div>
-    </div>
+    
   </body>
-  <footer class="footer_bg_color">
+  <footer>
     <div class="footer_flexbox_container">
       <div class="footer_flexbox">
         <h2>Visit</h2>
-        <p class="footer-text">Harry Fetts vei 9 0343 Olso</p>
+        <p class="footer-text">Harry Fetts vei 9 <br>0343 Olso</p>
       </div>
       <div class="footer_flexbox">
         <h2>About us</h2>
-        <a href="#">Careers</a>
-        <a href="#">Contact</a>
+        <a href="#"><p class="footer-text">Careers</p></a>
+        <a href="#"><p class="footer-text">Contact</p></a>
       </div>
       <div class="footer_flexbox">
         <h2>Follow</h2>
-
+        <div class="footericons_flexbox_container">
         <img
           class="footericons"
           src="./images/icons/facebook_icon_footer.svg"
@@ -128,6 +124,7 @@
           src="./images/icons/twitter_icon_footer.svg"
           alt="Twitter"
         />
+        </div>
       </div>
     </div>
   </footer>
