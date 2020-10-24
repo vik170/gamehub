@@ -5,36 +5,124 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="search.html">Search</a></li>
-          <li><a href="game.html">Game</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <div class="space">
+      <p>block1</p>
     </div>
-    <h1>Hello world!</h1>
-    <p>Welcome to my first website.</p>
-  </body>
-  <footer class="footerbg">
-    <div class="footer_flex">
-      <div>
-        <h2 class="footerheadline">Visit</h2>
-        <p>Harry Fetts vei 9 0343 Oslo</p>
+    <div class="searchbar">
+      <form>
+        <input type="search" id="gamesearch" name="gamesearch" placeholder="Search">
+        <input type="submit">
+      </form>
+    </div>
+    <div>
+    <img class="logo" src="images/logos/GameHub_Logo.png" alt="Logo" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./search.html">Search</a></li>
+        <li><a href="./game.html">Game</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav> 
+    </div>
+    <div class="sale_flexbox_container">
+      <div class="sale_flexbox">
+        <a href="./doom.html"><img class="gamecovers" src="./images/game_covers/Cover_Art_of_Doom_Eternal.png" alt="gamecover" /></a>
+        <h3>Doom Eternal</h3>
+        <p class="sale">$25</p>
+        <p class="sale red_font">50% Off</p>
       </div>
-      <div>
-        <h2 class="footerheadline footer_contact">About Us</h2>
+      <div class="sale_flexbox">
+        <img class="gamecovers" src="./images/game_covers/Destiny_2.jpg" alt="gamecover" />
+        <h3>Destiny 2</h3>
+        <p class="sale">$25</p>
+        <p class="sale red_font">50% Off</p>
+      </div>
+      <div class="sale_flexbox">
+        <img class="gamecovers" src="./images/game_covers/Cover_Art_of_Need_for_Speed_Heat.png" alt="gamecover" />
+        <h3>NFS Heat</h3>
+        <p class="sale">$25</p>
+        <p class="sale red_font">50% Off</p>
+      </div>
+      <div class="sale_flexbox">
+        <img class="gamecovers" src="./images/game_covers/Gears_of_War_4.jpg" alt="gamecover" />
+        <h3>Gears of War 4</h3>
+        <p class="sale">$25</p>
+        <p class="sale red_font">50% Off</p>
+      </div>
+    </div>
+    <div class="main_flexbox_container">
+      <div class="main_flexbox">
+        <img class="gamecovers" src="./images/game_covers/Black_Ops_3.jpg" alt="gamecover" />
+        <h3>Destiny 2</h3>
+        <p>$45</p>
+      </div>
+      <div class="main_flexbox">
+        <img class="gamecovers" src="./images/game_covers/Code_vein.png" alt="gamecover" />
+        <h3>Code Vein</h3>
+        <p>$45</p>
+      </div>
+      <div class="main_flexbox">
+        <img class="gamecovers" src="./images/game_covers/Halo_Guardians.png" alt="gamecover" />
+        <h3>Halo</h3>
+        <p>$45</p>
+      </div>
+      <div class="main_flexbox">
+        <img class="gamecovers" src="./images/game_covers/EA_UFC.jpg" alt="gamecover" />
+        <h3>UFC</h3>
+        <p>$45</p>
+      </div>
+      <div class="main_flexbox">
+        <img class="gamecovers" src="./images/game_covers/Conan_Exiles.jpg" alt="gamecover" />
+        <h3>Conan Exiles</h3>
+        <p>$45</p>
+      </div>
+      <div class="main_flexbox">
+        <img class="gamecovers" src="./images/game_covers/Alien_Isolation.jpg" alt="gamecover" />
+        <h3>Alien</h3>
+        <p>$45</p>
+      </div>
+    </div>
+    </div>
+  </body>
+  <footer class="footer_bg_color">
+    <div class="footer_flexbox_container">
+      <div class="footer_flexbox">
+        <h2>Visit</h2>
+        <p class="footer-text">Harry Fetts vei 9 0343 Olso</p>
+      </div>
+      <div class="footer_flexbox">
+        <h2>About us</h2>
         <a href="#">Careers</a>
         <a href="#">Contact</a>
       </div>
-      <div>
-        <h2 class="footerheadline">Follow</h2>
-        <img class="footericons" src="images/icons/facebook_icon_footer.svg" />
-        <img class="footericons" src="images/icons/twitter_icon_footer.svg" />
-        <img class="footericons" src="images/icons/instagram_icon_footer.svg" />
-        <img class="footericons" src="images/icons/linkedin_icon_footer.svg" />
+      <div class="footer_flexbox">
+        <h2>Follow</h2>
+
+        <img
+          class="footericons"
+          src="./images/icons/facebook_icon_footer.svg"
+          alt="Facebook"
+        />
+
+        <img
+          class="footericons"
+          src="./images/icons/instagram_icon_footer.svg"
+          alt="Instagram"
+        />
+
+        <img
+          class="footericons"
+          src="./images/icons/linkedin_icon_footer.svg"
+          alt="Linkedin"
+        />
+
+        <img
+          class="footericons"
+          src="./images/icons/twitter_icon_footer.svg"
+          alt="Twitter"
+        />
       </div>
     </div>
   </footer>

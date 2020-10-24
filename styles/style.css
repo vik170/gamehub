@@ -1,31 +1,135 @@
 ul {
-  padding: 0px;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3c3f51;
 }
 
-li {
-  display: inline;
+li a {
+  display: inline-block;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 16px 60px;
+  margin: 0px 20px;
+  text-decoration: none;
+  align-items: center;
+  font-size: 20px;
 }
 
-nav a {
-  padding: 10px;
-}
-
-.footerbg {
+.footer_bg_color {
   background-color: #f1f1f1;
 }
 
-.footerheadline {
+.logo {
+  width: 217px;
+  height: 137px;
+  position: absolute;
+  z-index: 1;
+  top: 30px;
+  left: 50px;
+}
+
+.searchbar {
+  position: relative;
+  left: 50%;
+  border-radius: 5px;
+}
+
+h2 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: #dcab56;
+  font-size: 20px;
+  text-align: center;
+}
+
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  text-align: center;
+  color: #707070;
+  margin: 10 23;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  color: #707070;
+  text-align: center;
+}
+
+p.sale {
+  float: left;
+  margin: 0 0 0 30px;
+}
+
+.red_font {
+  color: red;
 }
 
 .footericons {
   width: 20px;
+  display: block;
 }
 
-.footer_flex {
+.footer_flexbox_container {
   display: flex;
-  flex-direction: row;
   justify-content: center;
+}
+
+.footer_flexbox {
+  width: 100px;
+  padding: 10px;
+  margin: 10px 50px 10px 50px;
+}
+
+.footer_text {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main_flexbox_container {
+  display: flex;
+  justify-content: center;
+}
+
+.main_flexbox {
+  width: 166px;
+  margin: 41px 20px 41px 20px;
+  background-color: white;
+  border: #dcab56 1px solid;
+  height: 320px;
+}
+
+.gamecovers {
+  width: 166px;
+  height: 235px;
+}
+
+.sale_flexbox_container {
+  display: flex;
+  justify-content: center;
+  background-color: #dcab56;
+}
+
+.sale_flexbox {
+  width: 166px;
+  margin: 41px 20px 41px 20px;
+  background-color: #f1f1f1;
+  height: 320px;
+}
+
+.space {
+  display: block;
+  background-color: thistle;
+  size: 100px;
 }
