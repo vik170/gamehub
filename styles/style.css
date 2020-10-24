@@ -35,7 +35,6 @@ li a {
 .searchbar {
   position: relative;
   left: 50%;
-  border-radius: 5px;
 }
 
 h2 {
@@ -132,4 +131,18 @@ table {
   display: block;
   background-color: thistle;
   size: 100px;
+}
+
+.game_grid_container {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "main main . sidebar";
+}
+
+.icon_flexbox_container {
+  display: flex;
+}
+
+.icon_flexbox {
 }
