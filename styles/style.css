@@ -38,15 +38,6 @@ a:visited {
   text-decoration: none;
 }
 
-.logo {
-  width: 217px;
-  height: 137px;
-  position: absolute;
-  z-index: 1;
-  top: 30px;
-  left: 50px;
-}
-
 h2 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -70,11 +61,6 @@ p {
   text-align: center;
 }
 
-p.sale {
-  float: left;
-  margin: 0 0 0 30px;
-}
-
 .red_font {
   color: red;
 }
@@ -85,8 +71,8 @@ p.sale {
 }
 .footericons {
   width: 20px;
-  margin: auto;
-  display: block;
+  float: left;
+  margin-left: 5px;
 }
 
 .footer_flexbox_container {
@@ -107,37 +93,6 @@ p.sale {
   font-size: 16px;
 }
 
-.main_flexbox_container {
-  display: flex;
-  justify-content: center;
-}
-
-.main_flexbox {
-  width: 166px;
-  margin: 41px 20px 41px 20px;
-  background-color: white;
-  border: var(--orange) 1px solid;
-  height: 320px;
-}
-
-.gamecovers {
-  width: 166px;
-  height: 235px;
-}
-
-.space {
-  display: block;
-  background-color: thistle;
-  size: 100px;
-}
-
-.game_grid_container {
-  display: grid;
-  grid-template-areas:
-    "header header header header"
-    "main main . sidebar";
-}
-
 .icon_flexbox_container {
   display: flex;
   justify-content: right;
@@ -151,17 +106,26 @@ p.sale {
 /* Media query for tablets and large phones*/
 
 @media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
-
   .sale_flexbox_container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--orange);
   }
   .sale_flexbox {
-    flex-basis: auto;
+    margin: 41px 20px 41px 20px;
+    background-color: white;
+  }
+
+  .main_flexbox_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main_flexbox {
+    margin: 41px 20px 41px 20px;
+    border: var(--orange) 1px solid;
   }
 
   .logo {
@@ -171,6 +135,11 @@ p.sale {
   li a {
     padding: 16px 16px;
     margin: 0px 16px;
+  }
+
+  .gamecovers {
+    width: 200px;
+    height: 235px;
   }
 }
 
@@ -195,5 +164,36 @@ p.sale {
     margin: 41px 20px 41px 20px;
     background-color: #f1f1f1;
     height: 320px;
+  }
+
+  .main_flexbox_container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main_flexbox {
+    width: 166px;
+    margin: 41px 20px 41px 20px;
+    background-color: white;
+    border: var(--orange) 1px solid;
+    height: 320px;
+  }
+
+  .gamecovers {
+    width: 166px;
+    height: 235px;
+  }
+
+  p.sale {
+    float: left;
+    margin: 0 0 0 30px;
+  }
+  .logo {
+    width: 217px;
+    height: 137px;
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    left: 50px;
   }
 }
