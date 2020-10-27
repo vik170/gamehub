@@ -103,6 +103,13 @@ p {
   margin: 5px 10px;
 }
 
+.form-background {
+  margin: auto;
+  background-color: var(--orange);
+  border-radius: 20px;
+  width: 30%;
+}
+
 /* Media query for tablets and large phones*/
 
 @media only screen and (max-width: 600px) {
