@@ -38,6 +38,14 @@ a:visited {
   text-decoration: none;
 }
 
+h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: var(--light_navy_blue);
+  font-size: 30px;
+  text-align: center;
+}
+
 h2 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -107,7 +115,26 @@ p {
   margin: auto;
   background-color: var(--orange);
   border-radius: 20px;
-  width: 30%;
+  max-width: 50%;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.input-width {
+  margin: auto;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.button {
+  background-color: var(--dark_blue);
+  border: 0;
+  border-radius: 20px;
+  color: white;
+}
+
+.button_align {
+  text-align: center;
 }
 
 /* Media query for tablets and large phones*/
