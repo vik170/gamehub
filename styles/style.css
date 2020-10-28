@@ -24,6 +24,8 @@ li a {
   text-decoration: none;
   align-items: center;
   font-size: 20px;
+  padding: 16px 58px;
+  margin: 0px 16px;
 }
 
 li:hover {
@@ -103,7 +105,7 @@ p {
 
 .icon_flexbox_container {
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   margin: 0 20px;
 }
 
@@ -137,31 +139,63 @@ p {
   text-align: center;
 }
 
+.gamecovers {
+  max-width: 166px;
+  height: 235px;
+}
+
+.logo {
+  width: 217px;
+  height: 137px;
+  position: absolute;
+  z-index: 1;
+  top: 30px;
+  left: 50px;
+}
+
+p.sale {
+  float: left;
+  margin: 0 0 0 30px;
+}
+
+.sale_flexbox_container {
+  display: flex;
+  justify-content: center;
+  background-color: var(--orange);
+  flex-wrap: wrap;
+}
+.sale_flexbox {
+  width: auto;
+  margin: 41px 20px 41px 20px;
+  background-color: white;
+}
+
+.main_flexbox_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.main_flexbox {
+  margin: 41px 20px 41px 20px;
+  border: var(--orange) 1px solid;
+}
+
+.box {
+  background-color: blue;
+  width: auto;
+  height: 125px;
+}
+
+.profile_pic {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
 /* Media query for tablets and large phones*/
 
-@media only screen and (max-width: 600px) {
-  .sale_flexbox_container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--orange);
-  }
-  .sale_flexbox {
-    margin: 41px 20px 41px 20px;
-    background-color: white;
-  }
-
-  .main_flexbox_container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .main_flexbox {
-    margin: 41px 20px 41px 20px;
-    border: var(--orange) 1px solid;
-  }
-
+@media only screen and (max-width: 640px) {
   .logo {
     display: none;
   }
@@ -170,64 +204,21 @@ p {
     padding: 16px 16px;
     margin: 0px 16px;
   }
-
-  .gamecovers {
-    width: 200px;
-    height: 235px;
-  }
 }
 
 /* Media query for laptops*/
 
-/* Media query for desktops*/
-
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 1200px) {
+  .logo {
+    display: none;
+  }
   li a {
-    padding: 16px 58px;
+    padding: 16px 16px;
     margin: 0px 16px;
   }
+}
 
-  .sale_flexbox_container {
-    display: flex;
-    justify-content: center;
-    background-color: var(--orange);
-  }
+/* Media query for desktops*/
 
-  .sale_flexbox {
-    width: 166px;
-    margin: 41px 20px 41px 20px;
-    background-color: #f1f1f1;
-    height: 320px;
-  }
-
-  .main_flexbox_container {
-    display: flex;
-    justify-content: center;
-  }
-
-  .main_flexbox {
-    width: 166px;
-    margin: 41px 20px 41px 20px;
-    background-color: white;
-    border: var(--orange) 1px solid;
-    height: 320px;
-  }
-
-  .gamecovers {
-    width: 166px;
-    height: 235px;
-  }
-
-  p.sale {
-    float: left;
-    margin: 0 0 0 30px;
-  }
-  .logo {
-    width: 217px;
-    height: 137px;
-    position: absolute;
-    z-index: 1;
-    top: 30px;
-    left: 50px;
-  }
+@media only screen and (min-width: 1200px) {
 }
