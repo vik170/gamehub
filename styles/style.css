@@ -7,6 +7,10 @@
 
 /* Global styles including mobile styles*/
 
+body {
+  margin: 0;
+}
+
 ul {
   display: flex;
   justify-content: center;
@@ -26,6 +30,12 @@ li a {
   font-size: 20px;
   padding: 16px 58px;
   margin: 0px 16px;
+}
+
+p img {
+  float: left;
+  margin-right: 20px;
+  max-height: 200px;
 }
 
 li:hover {
@@ -71,8 +81,13 @@ p {
   text-align: center;
 }
 
-.red_font {
-  color: red;
+p.sale {
+  float: left;
+  margin: 0 0 0 30px;
+}
+
+footer {
+  background-color: var(--light_grey);
 }
 
 .footericons_flexbox_container {
@@ -88,13 +103,13 @@ p {
 .footer_flexbox_container {
   display: flex;
   justify-content: center;
-  background-color: var(--light_grey);
 }
 
 .footer_flexbox {
+  height: 100%;
   width: 100px;
   padding: 10px;
-  margin: 10px 50px 10px 50px;
+  margin: 10px 50px 30px 50px;
 }
 
 .footer_text {
@@ -153,44 +168,59 @@ p {
   left: 50px;
 }
 
-p.sale {
-  float: left;
-  margin: 0 0 0 30px;
-}
-
-.sale_flexbox_container {
-  display: flex;
-  justify-content: center;
-  background-color: var(--orange);
-  flex-wrap: wrap;
-}
 .sale_flexbox {
   width: auto;
   margin: 41px 20px 41px 20px;
   background-color: white;
 }
 
-.main_flexbox_container {
+.flexbox_container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
+.orange_background {
+  background-color: var(--orange);
+}
+
+.red_font {
+  color: red;
+}
 .main_flexbox {
   margin: 41px 20px 41px 20px;
   border: var(--orange) 1px solid;
 }
 
 .box {
-  background-color: blue;
+  background-color: darkkhaki;
   width: auto;
-  height: 125px;
+  height: 150px;
+  margin: 0;
+}
+
+.flexbox_wrap {
+  flex-wrap: wrap;
+}
+h5 {
+  margin: 0;
+  text-align: center;
+  padding-top: 75px;
 }
 
 .profile_pic {
   border-radius: 50%;
   width: 100px;
   height: 100px;
+}
+
+.bio_text {
+  text-align: left;
+}
+
+.bio_container {
+  margin: auto;
+  max-width: 50%;
+  height: auto;
 }
 
 /* Media query for tablets and large phones*/
