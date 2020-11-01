@@ -1,25 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>GameHub</title>
+    <title>Search</title>
+    <link rel="icon" href="./images/logos/GameHub_Logo.png" type="image/x-icon"/>
     <link rel="stylesheet" href="./styles/style.css" />
+    <meta name="description" content="Search results">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <div class="icon_flexbox_container">
       <div class="icon_flexbox">
-        <a href="#"><img src="./images/icons/login.svg" /></a>
+        <a href="./account.html"><img src="./images/icons/login.svg" alt="Sign in"/></a>
       </div>
       <div class="icon_flexbox"></div>
-        <a href="#"><img src="./images/icons/sign_up.svg" /></a>
+        <a href="./signup.html"><img src="./images/icons/sign_up.svg" alt="Sign up"/></a>
       <div class="icon_flexbox"></div>
-        <a href="#"><img src="./images/icons/cart.svg" /></a>
+        <a href="./checkout.html"><img src="./images/icons/cart.svg" alt="Shopping cart"/></a>
     </div>
-    <div class="searchbar">
-      <form>
-        <input type="search" id="gamesearch" name="gamesearch" placeholder="Search">
-        <input type="submit">
-      </form>
-    </div>
+    
     <div>
     <img class="logo" src="images/logos/GameHub_Logo.png" alt="Logo" />
     </div>
@@ -48,47 +47,48 @@
         <p class="sale">$25</p>
         <p class="sale red_font">50% Off</p>
       </div>
-
+      <footer class="footer_position">
+        <div class="flexbox_container">
+          <div class="footer_flexbox">
+            <h2>Visit</h2>
+            <p class="footer-text">Harry Fetts vei 9 <br>0343 Olso</p>
+          </div>
+          <div class="footer_flexbox">
+            <h2>About us</h2>
+            <a href="#"><p class="footer-text">Careers</p></a>
+            <a href="./contact.html"><p class="footer-text">Contact</p></a>
+          </div>
+          <div class="footer_flexbox">
+            <h2>Follow</h2>
+            <div class="footericons_flexbox_container">
+            <a href="#"><img
+              class="footericons"
+              src="./images/icons/facebook_icon_footer.svg"
+              alt="Facebook"
+            /></a>
+    
+            <a href="#"><img
+              class="footericons"
+              src="./images/icons/instagram_icon_footer.svg"
+              alt="Instagram"
+            /></a>
+    
+            <a href="#"><img
+              class="footericons"
+              src="./images/icons/linkedin_icon_footer.svg"
+              alt="Linkedin"
+            /></a>
+    
+            <a href="#"><img
+              class="footericons"
+              src="./images/icons/twitter_icon_footer.svg"
+              alt="Twitter"
+            /></a>
+            </div>
+          </div>
+        </div>
+      </footer>
     
   </body>
-  <footer class="footer_bg_color footer_position">
-    <div class="footer_flexbox_container">
-      <div class="footer_flexbox">
-        <h2>Visit</h2>
-        <p class="footer-text">Harry Fetts vei 9 <br>0343 Olso</p>
-      </div>
-      <div class="footer_flexbox">
-        <h2>About us</h2>
-        <a href="#">Careers</a>
-        <a href="#">Contact</a>
-      </div>
-      <div class="footer_flexbox">
-        <h2>Follow</h2>
-
-        <img
-          class="footericons"
-          src="./images/icons/facebook_icon_footer.svg"
-          alt="Facebook"
-        />
-
-        <img
-          class="footericons"
-          src="./images/icons/instagram_icon_footer.svg"
-          alt="Instagram"
-        />
-
-        <img
-          class="footericons"
-          src="./images/icons/linkedin_icon_footer.svg"
-          alt="Linkedin"
-        />
-
-        <img
-          class="footericons"
-          src="./images/icons/twitter_icon_footer.svg"
-          alt="Twitter"
-        />
-      </div>
-    </div>
-  </footer>
+  
 </html>
