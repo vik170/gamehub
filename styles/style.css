@@ -166,7 +166,7 @@ footer {
   width: 217px;
   height: 137px;
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   top: 30px;
   left: 50px;
 }
@@ -218,7 +218,7 @@ h5 {
   height: 100px;
 }
 
-.bio_text {
+.text_align_left {
   text-align: left;
 }
 
@@ -240,6 +240,25 @@ h5 {
   grid-gap: 20px;
   grid-template-columns: 166px 166px;
   grid-template-rows: 138px 138px;
+}
+
+.dim_page {
+  z-index: 2;
+  opacity: 0.5;
+  position: absolute;
+}
+
+.cart {
+  z-index: 3;
+  display: block;
+  position: absolute;
+  left: 25%;
+  right: 50%;
+  background-color: aqua;
+  color: #dcab56;
+  height: 620px;
+  width: 60%;
+  border-radius: 25px;
 }
 
 /* Media query for tablets and large phones*/
@@ -277,6 +296,7 @@ h5 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-left: 5px;
   }
 }
 
