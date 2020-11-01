@@ -150,13 +150,6 @@ footer {
   width: 100%;
 }
 
-.button {
-  background-color: var(--dark_blue);
-  border: 0;
-  border-radius: 20px;
-  color: white;
-}
-
 .gamecovers {
   max-width: 166px;
   height: 235px;
@@ -189,6 +182,7 @@ footer {
 .red_font {
   color: red;
 }
+
 .main_flexbox {
   margin: 41px 20px 41px 20px;
   border: var(--orange) 1px solid;
@@ -206,6 +200,7 @@ footer {
 .flexbox_wrap {
   flex-wrap: wrap;
 }
+
 h5 {
   margin: 0;
   text-align: center;
@@ -259,6 +254,32 @@ h5 {
   height: 620px;
   width: 60%;
   border-radius: 25px;
+}
+
+.separator {
+  border-top: var(--light_navy_blue) solid 1px;
+  width: 80%;
+  margin: auto;
+}
+
+.payment_logo {
+  display: block;
+  height: 165px;
+  width: 264px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.max_widht {
+  width: 100%;
+}
+
+.button {
+  background-color: var(--light_navy_blue);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin: 10px;
 }
 
 /* Media query for tablets and large phones*/
