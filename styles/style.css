@@ -3,6 +3,7 @@
   --orange: #dcab56;
   --dark_blue: #1b203d;
   --light_grey: #f1f1f1;
+  --gray: #707070;
 }
 
 /* Global styles including mobile styles*/
@@ -38,6 +39,18 @@ p img {
   max-height: 200px;
 }
 
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  color: var(--gray);
+  text-align: center;
+}
+
+p.sale {
+  float: left;
+  margin: 0 0 0 30px;
+}
+
 li:hover {
   background-color: var(--dark_blue);
 }
@@ -61,7 +74,7 @@ h1 {
 h2 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: orange;
+  color: var(--orange);
   font-size: 20px;
   text-align: center;
 }
@@ -70,20 +83,14 @@ h3 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
   text-align: center;
-  color: #707070;
+  color: var(--gray);
   margin: 10 23;
 }
 
-p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 15px;
-  color: #707070;
+h5 {
+  margin: 0;
   text-align: center;
-}
-
-p.sale {
-  float: left;
-  margin: 0 0 0 30px;
+  padding-top: 75px;
 }
 
 footer {
@@ -201,18 +208,6 @@ footer {
   flex-wrap: wrap;
 }
 
-h5 {
-  margin: 0;
-  text-align: center;
-  padding-top: 75px;
-}
-
-.profile_pic {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-}
-
 .text_align_left {
   text-align: left;
 }
@@ -235,12 +230,6 @@ h5 {
   grid-gap: 20px;
   grid-template-columns: 166px 166px;
   grid-template-rows: 138px 138px;
-}
-
-.dim_page {
-  z-index: 2;
-  opacity: 0.5;
-  position: absolute;
 }
 
 .cart {
