@@ -216,6 +216,7 @@ footer {
   margin: auto;
   max-width: 50%;
   height: auto;
+  margin-bottom: 150px;
 }
 
 .grid_game {
@@ -230,19 +231,6 @@ footer {
   grid-gap: 20px;
   grid-template-columns: 166px 166px;
   grid-template-rows: 138px 138px;
-}
-
-.cart {
-  z-index: 3;
-  display: block;
-  position: absolute;
-  left: 25%;
-  right: 50%;
-  background-color: aqua;
-  color: #dcab56;
-  height: 620px;
-  width: 60%;
-  border-radius: 25px;
 }
 
 .separator {
